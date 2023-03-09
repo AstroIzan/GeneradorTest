@@ -1,0 +1,206 @@
+/* FONT: font-family: 'Poppins', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:wght@300&display=swap');
+
+/* COLORS */
+    :root {
+        /* BASE COLORS */
+            /* Error Control */
+            --red: #FF0000;
+            --green: #17971e;   
+            
+            /* Black - White - Grays */
+            --black: #000000;
+            --ultra-dark-gray: #1f1f1f;
+            --dark-gray: #3d3d3d;
+            --gray: #5f5f5f;
+            --light-gray: #8b8b8b;
+            --white: #FFFFFF;
+            --dirty-white: #FAFAFA;
+
+        /* APLICATION COLORS */
+            /* Background */
+            --background: radial-gradient(circle, rgba(13,128,235,1) 0%, rgba(9,87,159,1) 100%);
+    
+            /* Blues */
+            --blue: #0159b3;
+            --dark-blue: #003266;
+            --light-blue: #017eff;
+
+            /* Yellow (gold style) */
+            --dark-yellow: #b09337;
+            --yellow: #fdd34f;
+            --light-yellow: #ffec4f;
+    }
+
+/* BASIC STYLE */
+    * { transition: all 0.5s; }
+    
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif; }
+           
+    section {
+        background: var(--background);
+        height: 100vh;
+        width: 100vw; }
+        
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+
+    .container {
+        width: 90%; 
+        height: 100%; }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; }
+
+    .row-start {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center; }
+    
+    .column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+
+    .column-start {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center; }
+    
+    span {
+        font-size: 0.8em;
+        color: var(--red); }
+
+/* APLICATION CSS */
+    .pregunta {
+        width: 20%;
+        margin: 2.5%;
+        height: 400px; }
+
+    h1 {
+        width: 100%;
+        margin: 0px;
+        box-sizing: border-box;
+        font-size: 2em;
+        color: var(--black);
+        text-align: center; }
+
+    h2 {
+        width: 100%;
+        margin: 0px;
+        box-sizing: border-box;
+        font-size: 1.5em;
+        color: var(--black);
+        text-align: center; }   
+
+    #crearTest {
+        border-radius: 20px;
+        width: 40%;
+        height: 300px;
+        background-color: var(--white); }
+
+    #crearTest form {
+        width: 100%;
+        height: 70%; }
+
+    #crearTest input {
+        font-size: 1.2em;
+        width: 70%;
+        height: 30px;
+        margin: 10px;
+        border: none;
+        border-bottom: 2px solid var(--blue); }
+
+    input:focus {
+        color: var(--blue);
+        outline: none; }
+
+    input[type="button"], input[type="submit"] {
+        width: 200px !important;
+        height: 50px !important;
+        background-color: var(--blue);
+        color: var(--white);
+        font-size: 1.2em;
+        border: none;
+        border-radius: 5px;
+        margin: 10px; }
+
+    input[type="button"]:hover, input[type="submit"]:hover {
+        background-color: var(--light-blue);
+        cursor: pointer; }
+
+
+    section { overflow: auto; }
+
+    ::-webkit-scrollbar { width: 12px; }
+    ::-webkit-scrollbar-track { background: var(--white); }
+    ::-webkit-scrollbar-thumb { background: var(--dark-blue); }  
+
+    .titulo_preguntas {
+        padding: 20px;
+        width: 40%;
+        margin: 2.5%;
+        border-radius: 20px;
+        background-color: var(--white); }
+
+    .pregunta {
+        width: 40% !important;
+        padding: 20px;
+        border-radius: 20px;
+        margin: 2.5%;
+        background-color: var(--white); }
+
+    .tituloPregunta {
+        width: 90%;
+        height: 20px;
+        margin: 10px;
+        border: none;
+        border-bottom: 2px solid var(--blue);
+        font-size: 1.2em; }
+
+    .respuestasPregunta {
+        width: 80%;
+        height: 20px;
+        margin: 10px;
+        border: none;
+        border-bottom: 2px solid var(--blue);
+        font-size: 1.2em; }
+
+    .checkerRespuesta {
+        width: 20px;
+        height: 20px;
+        margin: 10px;
+        border: none;
+        border-radius: 0px;
+        border-bottom: 2px solid var(--blue);
+        font-size: 1.2em; }
+
+    .buttonBackground {
+        padding: 20px;
+        width: 40%;
+        margin: 2.5%;
+        margin-bottom: 200px;
+        background-color: var(--white);
+        border-radius: 20px; }
+
+    .notaTestRes {
+        margin-top: 10px;
+        width: 80%;
+        color: var(--white);
+        padding: 30px;
+        border-radius: 20px;
+        font-size: 1.2em; }
+
+    .red { background-color: var(--red); }
+    .green { background-color: var(--green); }
